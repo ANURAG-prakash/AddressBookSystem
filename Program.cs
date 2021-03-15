@@ -2,6 +2,7 @@
 
 namespace AddressBookSystem
 {
+  
     class Program
     {
         static void Main(string[] args)
@@ -13,7 +14,7 @@ namespace AddressBookSystem
         {
             Console.WriteLine("Welcome To Adress Book");
         }
-        public static void Contact()
+        public static int Contact()
         {
             string First_Name, Last_Name, Address, Email, State;
             double Zip_Code, Phone_Number;
@@ -30,7 +31,23 @@ namespace AddressBookSystem
             Zip_Code = Console.Read();
             Console.WriteLine("Enter Phone Number");
             Phone_Number = Console.Read();
-            Console.ReadKey();
+            Console.WriteLine("Name = " + First_Name, Last_Name);
+            Console.WriteLine("Address = " + Address);
+            Console.WriteLine("Email = " + Email);
+            Console.WriteLine("State = " + State);
+            Console.WriteLine("Zip Code = " + Zip_Code);
+            Console.WriteLine("Phone Number = " + Phone_Number);
+            Console.WriteLine("Enter the replace name ");
+           string  Replace = Console.ReadLine();
+            string replace_name = First_Name.Replace(First_Name, Replace);
+            Console.WriteLine("Name = " + replace_name);
+
+            return 0;
+           
+      
+
         }
+
+        
     }
 }
