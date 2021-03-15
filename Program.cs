@@ -47,7 +47,16 @@ namespace AddressBookSystem
       
 
         }
-
+      public static void MultipleContact()
+      {
+        int i,NumberOfInputs;
+        Console.WriteLine("Enter The inputs required");
+        NumberOfInputs=Console.Read();
+        For(i=1;i<=NumberOfInputs;i++)
+        {
+          Contact();
+        }
+      }
         
     }
 }
